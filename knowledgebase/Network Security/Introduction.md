@@ -1,6 +1,6 @@
 ---
-title: 'OWASP top 10'
-description: 'The knowledge I have acquired'
+title: 'Introduction to Networking'
+description: 'Networking fundamentals'
 ---
 
 ## Initialization
@@ -24,4 +24,5 @@ this is what i know.
 def good():
     print('Good is good')
 ```
+
 
