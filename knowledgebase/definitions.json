@@ -1,0 +1,11 @@
+{
+  "navigation": false,
+  "title": "Terms and Definitions",
+  "content": {
+    "fundamentals":{
+      "administrative_access_control":"Organizational policies that dictates who has access to what information. This policies are usually signed by Senior level management.",
+      "physical_access_control": "Hardwares or physical mechanisms that controls access to assets. Eg security guard, mantrap, wall, etc",
+      "logical_access_control": "A pre-configured system that controls an individuals ability to access computer system resources such as database"
+    }
+  }
+}
