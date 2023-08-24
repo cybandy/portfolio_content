@@ -1,18 +1,16 @@
 {
-  "title": "Terms and Definitions",
   "content": {
-    "fundamentals":{
-      "administrative_access_control":"Organizational policies that dictates who has access to what information. This policies are usually signed by Senior level management.",
-      "physical_access_control": "Hardwares or physical mechanisms that controls access to assets. Eg security guard, mantrap, wall, etc",
-      "logical_access_control": "A pre-configured system that controls an individuals ability to access computer system resources such as database"
+    "fundamentals": {
+      "administrative_access_control": "Organizational policies that dictates who has access to what information. This policies are usually signed by Senior level management.",
+      "logical_access_control": "A pre-configured system that controls an individuals ability to access computer system resources such as database",
+      "physical_access_control": "Hardwares or physical mechanisms that controls access to assets. Eg security guard, mantrap, wall, etc"
     },
     "networking": {
+      "Application programming interface (API)": " A set of routines, standards, protocols, and tools for building software applications to access a web-based software application or web tool.",
+      "Hubs": "They are devices used to connect multiple computers in a network. They are also called repeaters",
       "Network": "A network is simply two or more computers linked together to share data or resources",
-      "Network Devices":{
-        "Hubs": "They are devices used to connect multiple computers in a network. They are also called repeaters"
-      },
-      "OSI model": "Open System Interconnection model was developed to establish a standardized way to describe the communication between connected devices/computers",
-      "Application programming interface (API)":" A set of routines, standards, protocols, and tools for building software applications to access a web-based software application or web tool."
+      "OSI model": "Open System Interconnection model was developed to establish a standardized way to describe the communication between connected devices/computers"
     }
-  }
+  },
+  "title": "Terms and Definitions"
 }
