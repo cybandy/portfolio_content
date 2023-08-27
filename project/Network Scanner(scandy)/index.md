@@ -49,11 +49,11 @@ pip install -r requirements.txt
 ### Commands
 
 |   Commands    	   |     Description         	      |
-|:-----------------:|:------------------------------:|
-| -t or --target 	  |    Target network ip      	    |
-|  -p or --port  	  |    port(s) to scan       	     |
-| -th or --thread 	 | Number of thread. Default 50 	 |
-| -v or --verbose 	 |  Print all closed ports    	   |
+|--------------------|--------------------------------|
+| -t or --target 	   |    Target network ip            |
+|  -p or --port  	   |    port(s) to scan              |
+| -th or --thread 	 | Number of thread. Default 50   |
+| -v or --verbose 	 |  Print all closed ports        |
 
 The command below will check if the IP can be reached and then scan default ports 1-1024
 ```sh
