@@ -27,7 +27,7 @@ All codes used can be found at [cybandy](https://github.com/cybandy/scandy) repo
 ### Installation
 
 #### Caution
-Because scapy interact directly with the raw socket of your system it requires sudo priveledges. You can directly call sudo as I have shown below or follow the explanation [here](http://https://github.com/Forescout/project-memoria-detector/issues/6 "here") to tweak it as you want it.
+Because scapy interact directly with the raw socket of your system it requires sudo privileges. You can directly call sudo as I have shown below or follow the explanation [here](http://https://github.com/Forescout/project-memoria-detector/issues/6 "here") to tweak it as you want it.
 
 Clone the repo
 ```sh
