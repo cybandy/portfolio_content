@@ -1,5 +1,5 @@
 ---
-title: Crack the hash: TryHackMe
+title: Crack the hash - TryHackMe
 description: cracking hashes challenges
 image: https://tryhackme.com/img/banners/default_tryhackme.png
 author: 'Andrews Boateng Okyere'
