@@ -10,7 +10,7 @@ Gamified cybersecurity learing platform
 ::cy-sources
 ---
 items: [
-    {label: 'TryHackMe'
+    {label: 'TryHackMe',
     to:  'https://tryhackme.com'
     }
 ]
