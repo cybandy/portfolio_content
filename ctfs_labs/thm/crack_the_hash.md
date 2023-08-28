@@ -8,12 +8,14 @@ tags: 'john the ripper, hashcat, rockyou, hashcat'
 ---
 
 ::cy-sources
+---
 items: [
   {
     label:'TryHackMe',
     to: "https://tryhackme.com/room/crackthehash"
   }
 ]
+---
 ::
 
 ## Description
