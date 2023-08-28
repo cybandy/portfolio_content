@@ -11,7 +11,7 @@ tags: 'john the ripper, hashcat, rockyou, hashcat'
 ---
 items: [
   {
-    label:'TryHackMe',
+    label: 'TryHackMe',
     to: "https://tryhackme.com/room/crackthehash"
   }
 ]
