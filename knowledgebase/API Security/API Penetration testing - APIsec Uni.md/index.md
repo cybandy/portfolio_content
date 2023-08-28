@@ -1,5 +1,5 @@
 ---
-title: API Security
+title: API Penetration Testing Course - APIsec University
 description: "API pentesting is about the tools, methods and techniques used to test the security of an API"
 image: ""
 author: 'Andrews Boateng Okyere'
