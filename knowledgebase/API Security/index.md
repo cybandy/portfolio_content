@@ -1,28 +1,26 @@
 ---
-title: 'API Security'
-description: 'API Security'
+title: API Security
+description: "Application programming interface (API) security is ensuring CIA of assets by securing endpoint through both administrative controls and logical controls"
+image: ""
+author: 'Andrews Boateng Okyere'
+publishedAt: "29/08/2023"
+tags: "api, apisec, thm"
 ---
+::cy-sources
+---
+items: [
+    {
+label: "APIsec University",
+    to:  "https://university.apisec.ai"
+}
+]
+---
+::
 
-## Initialization
+## Description
+API is now the heart of everything on the internet. API enables companies to give access to some of their resources or technologies to either trusted partners or the general public. This has revolutionized the world of IT but to security experts, this spells trouble. Most content here will be about ethically performing API pentesting, Governance, Risk and Compliance about API in industries such as PCI, proper documentation, etc
 
-Knowledge is powerful in the right hands
-good
 
-### Who
-Who needs knowledge?
-
-### Why
-Why do they need knowledge
-
-## Cybersecurity
-information about the field
-
-### what do you know
-this is what i know.
-
-```python
-def good():
-    print('Good is good')
-```
-
+::sub-section-listing
+::
 
