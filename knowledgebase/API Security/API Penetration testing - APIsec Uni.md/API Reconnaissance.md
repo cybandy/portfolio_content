@@ -87,8 +87,15 @@ If the target has public api available, you can use the [wayback machine](https:
 
 ## Active Reconnaissance
 
-All in passive recon we were just digging around the targets back for any useful information that will help us at this stage and subsequent stage but, in **active recon** , we will now directly interact with the target to further gather more information.
+In passive recon we were just digging around the target for any useful information that will help us at this stage and subsequent stages. But, in **active recon** , we will now directly interact with the target to further gather more information.
 Remember,
 >Every pentester is as good as their information gathering skills - Andrews
+
+### Start crAPI
+
+```sh
+cd ~/lab/crapi
+sudo docker-compose up -d
+```
 
 ## Quiz
