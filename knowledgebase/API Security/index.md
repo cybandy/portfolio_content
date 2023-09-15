@@ -5,8 +5,6 @@ image: ""
 author: 'Andrews Boateng Okyere'
 publishedAt: "29/08/2023"
 tags: "api, apisec, thm"
-navigation:
-    title: 'Introduction'
 
 ---
 ::cy-sources
