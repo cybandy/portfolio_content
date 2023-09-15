@@ -1,10 +1,13 @@
 ---
-title: API Security
+title: 'API Security'
 description: "Application programming interface (API) security is ensuring CIA of assets by securing endpoint through both administrative controls and logical controls"
 image: ""
 author: 'Andrews Boateng Okyere'
 publishedAt: "29/08/2023"
 tags: "api, apisec, thm"
+navigation:
+    title: 'Introduction'
+
 ---
 ::cy-sources
 ---
@@ -12,7 +15,8 @@ tags: "api, apisec, thm"
 items: [
     {
 label: "APIsec University",
-    to:  "https://university.apisec.ai"
+    to:  "https://university.apisec.ai",
+    target: "_blank"
 }
 ]
 ---
