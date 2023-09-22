@@ -3,15 +3,35 @@
     "fundamentals": {
       "administrative_access_control": "Organizational policies that dictates who has access to what information. This policies are usually signed by Senior level management.",
       "logical_access_control": "A pre-configured system that controls an individuals ability to access computer system resources such as database",
-      "physical_access_control": "Hardwares or physical mechanisms that controls access to assets. Eg security guard, mantrap, wall, etc"
+      "physical_access_control": "Hardwares or physical mechanisms that controls access to assets. Eg security guard, mantrap, wall, etc",
+      "cybersecurity": "The practice of ensuring confidentiality, integrity, and availability of information by protecting assets such as networks, data from unauthorized access or exposure",
+      "threat_actor": "Any person or group who presents a security risk",
+      "compliance": "It is the process of adhering to internal standards and external regulations and enables organizations to avoid fines and security breaches.",
+      "security_frameworks": "They are guidelines used for building plans to help mitigate risks and threats to data and privacy.",
+      "security_posture": "It is an organization’s ability to manage its defense of critical assets and data and react to change. A strong security posture leads to lower risk for the organization.",
+      "internal_threat": "An internal threat can be a current or former employee, an external vendor, or a trusted partner who poses a security risk. At times, an internal threat is accidental. For example, an employee who accidentally clicks on a malicious email link would be considered an accidental threat. Other times, the internal threat actor intentionally engages in risky activities, such as unauthorized data access."
     },
     "networking": {
       "Application programming interface (API)": " A set of routines, standards, protocols, and tools for building software applications to access a web-based software application or web tool.",
       "Hubs": "They are devices used to connect multiple computers in a network. They are also called repeaters",
       "Network": "A network is simply two or more computers linked together to share data or resources",
-      "OSI model": "Open System Interconnection model was developed to establish a standardized way to describe the communication between connected devices/computers"
+      "OSI model": "Open System Interconnection model was developed to establish a standardized way to describe the communication between connected devices/computers",
+      "Network_security": "Network security is the practice of keeping an organization's network infrastructure secure from unauthorized access. This includes data, services, systems, and devices that are stored in an organization’s network.",
+      "Cloud Security": "Cloud security is the process of ensuring that assets stored in the cloud are properly configured, or set up correctly, and access to those assets is limited to authorized users. The cloud is a network made up of a collection of servers or computers that store resources and data in remote physical locations known as data centers that can be accessed via the internet. Cloud security is a growing subfield of cybersecurity that specifically focuses on the protection of data, applications, and infrastructure in the cloud."
+    },
+    "attacks": {
+      "Phishing": "Phishing is the use of digital communications to trick people into revealing sensitive data or deploying malicious software.",
+      "Spear_phishing": " A malicious email attack that targets a specific user or group of users. The email seems to originate from a trusted source.",
+      "whaling": "A form of spear phishing. Threat actors target company executives to gain access to sensitive data.",
+      "Vishing": "The exploitation of electronic voice communication to obtain sensitive information or to impersonate a known source.",
+      "smishing": "The use of text messages to trick users, in order to obtain sensitive information or to impersonate a known source.",
+      "malware": "Malware is simply any software that harms computers, networks, devices, etc",
+      "viruses": " Malicious code written to interfere with computer operations and cause damage to data and software. A virus needs to be initiated by a user/agent (i.e., a threat actor), who transmits the virus via a malicious attachment or file download.",
+      "worms": " Malware that can duplicate and spread itself across systems on its own. In contrast to a virus, a worm does not need to be downloaded by a user. Instead, it self-replicates and spreads from an already infected computer to other devices on the same network.",
+      "ransomware": "A malicious attack where threat actors encrypt an organization's data and demand payment to restore access.",
+      "spyware": "Malware that’s used to gather and sell information without consent. Spyware can be used to access devices. This allows threat actors to collect personal data, such as private emails, texts, voice and image recordings, and locations."
     }
   },
   "title": "Terms and Definitions",
-  "description": "Some common terms and their definitions"
+  "description": "Common cybersecurity terminologies and definitions"
 }
