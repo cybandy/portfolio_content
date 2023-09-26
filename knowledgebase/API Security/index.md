@@ -5,12 +5,7 @@ image: ""
 author: 'Andrews Boateng Okyere'
 publishedAt: "29/08/2023"
 tags: "api, apisec, thm"
-
----
-::cy-sources
----
-
-items: [
+sources: [
     {
 label: "APIsec University",
     to:  "https://university.apisec.ai",
@@ -18,8 +13,6 @@ label: "APIsec University",
 }
 ]
 ---
-
-::
 
 ## Description
 

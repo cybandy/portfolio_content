@@ -5,12 +5,7 @@ image: ""
 author: 'Andrews Boateng Okyere'
 publishedAt: "06/09/2023"
 tags: 'linux, medium, privilege escalation, free'
----
-
-::cy-sources
----
-
-items: [
+sources: [
     {
 label: 'TryHackMe',
     to: 'https://tryhackme.com/room/linprivesc'
@@ -18,7 +13,6 @@ label: 'TryHackMe',
 ]
 ---
 
-::
 
 ## Task 1
 
@@ -135,18 +129,45 @@ The target system may be a pivoting point to another network. The ifconfig comma
 
 This can be confirmed using the ip route command to see which network routes exist.
 
-netstat
+### netstat
+
 Following an initial check for existing interfaces and network routes, it is worth looking into existing communications. The netstat command can be used with several different options to gather information on existing connections.
 
-netstat -a: shows all listening ports and established connections.
-netstat -at or netstat -au can also be used to list TCP or UDP protocols respectively.
-netstat -l: list ports in “listening” mode. These ports are open and ready to accept incoming connections. This can be used with the “t” option to list only ports that are listening using the TCP protocol (below)
+```sh
+netstat -a #shows all listening ports and established connections.
+```
 
-netstat -s: list network usage statistics by protocol (below) This can also be used with the -t or -u options to limit the output to a specific protocol.
+list TCP protocols
 
-netstat -tp: list connections with the service name and PID information.
+```sh
+netstat -at
+```
 
-This can also be used with the -l option to list listening ports (below)
+list UDP protocols
+
+```sh
+netstat -au
+```
+
+list ports in “listening” mode. These ports are open and ready to accept incoming connections. This can be used with the “t” option to list only ports that are listening using the TCP protocol (below)
+
+```sh
+netstat -l
+```
+
+
+list network usage statistics by protocol (below) This can also be used with the -t or -u options to limit the output to a specific protocol.
+
+```sh
+netstat -s
+```
+list connections with the service name and PID information.
+
+```sh
+netstat -tp
+```
+
+This can also be used with the -l option to list listening ports
 
 We can see the “PID/Program name” column is empty as this process is owned by another user.
 
@@ -160,41 +181,44 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 -n: Do not resolve names
 -o: Display timers
 
-find Command
+### find Command
 Searching the target system for important information and potential privilege escalation vectors can be fruitful. The built-in “find” command is useful and worth keeping in your arsenal.
 
 Below are some useful examples for the “find” command.
 
 Find files:
 
-find . -name flag1.txt: find the file named “flag1.txt” in the current directory
-find /home -name flag1.txt: find the file names “flag1.txt” in the /home directory
-find / -type d -name config: find the directory named config under “/”
-find / -type f -perm 0777: find files with the 777 permissions (files readable, writable, and executable by all users)
-find / -perm a=x: find executable files
-find /home -user frank: find all files for user “frank” under “/home”
-find / -mtime 10: find files that were modified in the last 10 days
-find / -atime 10: find files that were accessed in the last 10 day
-find / -cmin -60: find files changed within the last hour (60 minutes)
-find / -amin -60: find files accesses within the last hour (60 minutes)
-find / -size 50M: find files with a 50 MB size
+`find . -name flag1.txt`: find the file named “flag1.txt” in the current directory
+`find /home -name flag1.txt`: find the file names “flag1.txt” in the /home directory
+`find / -type d -name config`: find the directory named config under “/”
+`find / -type f -perm 0777`: find files with the 777 permissions (files readable, writable, and executable by all users)
+`find / -perm a=x`: find executable files
+`find /home -user frank`: find all files for user “frank” under “/home”
+`find / -mtime 10`: find files that were modified in the last 10 days
+`find / -atime 10`: find files that were accessed in the last 10 day
+`find / -cmin -60`: find files changed within the last hour (60 minutes)
+`find / -amin -60`: find files accesses within the last hour (60 minutes)
+`find / -size 50M`: find files with a 50 MB size
 This command can also be used with (+) and (-) signs to specify a file that is larger or smaller than the given size.
 
 The example above returns files that are larger than 100 MB. It is important to note that the “find” command tends to generate errors which sometimes makes the output hard to read. This is why it would be wise to use the “find” command with “-type f 2>/dev/null” to redirect errors to “/dev/null” and have a cleaner output (below).
 
 Folders and files that can be written to or executed from:
 
-find / -writable -type d 2>/dev/null : Find world-writeable folders
-find / -perm -222 -type d 2>/dev/null: Find world-writeable folders
-find / -perm -o w -type d 2>/dev/null: Find world-writeable folders
+`find / -writable -type d 2>/dev/null` : Find world-writeable folders
+`find / -perm -222 -type d 2>/dev/null`: Find world-writeable folders
+`find / -perm -o w -type d 2>/dev/null`: Find world-writeable folders
 The reason we see three different “find” commands that could potentially lead to the same result can be seen in the manual document. As you can see below, the perm parameter affects the way “find” works.
 
-find / -perm -o x -type d 2>/dev/null : Find world-executable folders
+`find / -perm -o x -type d 2>/dev/null` : Find world-executable folders
 Find development tools and supported languages:
 
+```sh
 find / -name perl*
 find / -name python*
 find / -name gcc*
+```
+
 Find specific file permissions:
 
 Below is a short example used to find files that have the SUID bit set. The SUID bit allows the file to run with the privilege level of the account that owns it, rather than the account which runs it. This allows for an interesting privilege escalation path,we will see in more details on task 6. The example below is given to complete the subject on the “find” command.

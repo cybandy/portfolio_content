@@ -3,22 +3,15 @@ title: Crack the hash - TryHackMe
 description: cracking hashes challenges
 image: https://tryhackme.com/img/banners/default_tryhackme.png
 author: 'Andrews Boateng Okyere'
-publishedAt: 28/08/2023,
+publishedAt: 28/08/2023
 tags: 'john the ripper, hashcat, rockyou, hashcat'
----
-
-::cy-sources
----
-
-items: [
+sources: [
   {
     label: 'TryHackMe',
     to: "https://tryhackme.com/room/crackthehash"
   }
 ]
 ---
-
-::
 
 ## Description
 
@@ -31,7 +24,7 @@ Answer the questions below
 (repeat the process of step 1 for all the questions except for number 3)
 
  **1. 48bb6e862e54f2a795ffc4e541caed4d**
-using [crackstation.net](crackstation.net) we find the hash is md5 and get the result below
+using [[crackstation.net]](https://crackstation.net/) we find the hash is md5 and get the result below
 
 ```
 easy
