@@ -10,7 +10,12 @@
       "security_frameworks": "They are guidelines used for building plans to help mitigate risks and threats to data and privacy.",
       "security_posture": "It is an organization’s ability to manage its defense of critical assets and data and react to change. A strong security posture leads to lower risk for the organization.",
       "internal_threat": "An internal threat can be a current or former employee, an external vendor, or a trusted partner who poses a security risk. At times, an internal threat is accidental. For example, an employee who accidentally clicks on a malicious email link would be considered an accidental threat. Other times, the internal threat actor intentionally engages in risky activities, such as unauthorized data access.",
-      "logs": "A log is a record of events that occur within an organization’s systems"
+      "logs": "A log is a record of events that occur within an organization’s systems",
+      "database": "Database is an organized collection of data",
+      "asset":  "An object that is of value to an organization or individual. Example intellectual property, data center, etc",
+      "metrics": " Key technical attributes such as response time, availability, and failure rate, which are used to assess the performance of a software application",
+      "incident_response": "An organization’s quick attempt to identify an attack, contain the damage, and correct the effects of a security breach",
+      "chronicle": "A cloud-native tool designed to retain, analyze, and search data"
     },
     "networking": {
       "Application programming interface (API)": " A set of routines, standards, protocols, and tools for building software applications to access a web-based software application or web tool.",
@@ -38,10 +43,22 @@
       "CISSP": "Certified information Systems Security Professional",
       "PII": "Personally Identifiable Information (PII): It is any data/information of an individual such as name, and phone number that can be used to infer the identity of a person",
       "SPII": "sensitive Personally Identifiable Information(SPII): It is a specific PII that falls under stricter handling guidelines, including social security numbers and credit card numbers",
-      "SIEM": "Security Information and Event Management: A SIEM tool is an application that collects and analyzes log data to monitor critical activities in an organization."
+      "SIEM": "Security Information and Event Management: A SIEM tool is an application that collects and analyzes log data to monitor critical activities in an organization.",
+      "IEEE": "Institute of Electrical and Electronics Engineers"
     },
     "governance_risk_compliance": {
-      "Laws": "They are rules that govern a community"
+      "Laws": "They are rules that govern a community",
+      "security_audit": "A security audit is a review of an organization's security controls, policies, and procedures against a set of expectations.",
+      "control_assessment": " A controls assessment involves closely reviewing an organization’s existing assets, then evaluating potential risks to those assets in order to ensure internal controls and processes are effective. ",
+      "splunk_enterprise":"A self-hosted tool used to retain, analyze, and search an organization's log data to provide security information and alerts in real-time",
+      "splunk_cloud": "A cloud-hosted tool used to collect, search, and monitor log data",
+      "Security orchestration, automation, and response (SOAR)": "A collection of applications, tools, and workflows that use automation to respond to security events",
+      "Security information and event management (SIEM)": "An application that collects and analyzes log data to monitor critical activities in an organization",
+      "playbook": "A manual that provides details about any operational action"
+    },
+    "Forensic": {
+      "Order of volatility": "A sequence outlining the order of data that must be preserved from first to last",
+      "Protecting and preserving evidence": "The process of properly working with fragile and volatile digital evidence"
     }
   },
   "title": "Terms and Definitions",
