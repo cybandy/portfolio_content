@@ -52,14 +52,15 @@ hashid -m hash
 ```
 
 **results**
-<pre>
+
+```
 --File 'hash'--
 Analyzing '$2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom'
 [+] Blowfish(OpenBSD) [Hashcat Mode: 3200]
 [+] Woltlab Burning Board 4.x
 [+] bcrypt [Hashcat Mode: 3200]
 --End of file 't1_4'--  
-</pre>
+```
 
  **Crack**
 
